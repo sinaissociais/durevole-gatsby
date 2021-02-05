@@ -5,3 +5,7 @@ button {
     background-color: red;
     padding: 50px;
 }
+.botao-durevole:hover {
+    background-color: rgb(159, 26, 163);
+    scale: 1.5;
+}
