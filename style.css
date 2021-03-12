@@ -1,0 +1,120 @@
+
+body {
+    font-family: Stolzl;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 66px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+}
+h4 {
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 400;
+}
+h5 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+h6 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+}
+p.destaque-light {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 200;
+}
+p.destaque-pequeno {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.botao-redondo {
+    font-family: Stolzl;
+    font-size: 12px;
+    padding: 15px 25px;
+    background: #FFE7B9;
+    border-radius: 100px;
+    color: #385A58;
+    font-weight: 600;
+    border-width: 0px;
+}
+
+.b-branco {
+    background: #FFF;
+}
+.b-transparente {
+    background: transparent;
+    border: 2px solid #385A58;
+    box-sizing: border-box;
+}
+.botao-traco-g {
+    font-family: Stolzl;
+    font-size: 14px;
+    padding: 18px 0px;
+    color: #487673;
+    border: 1px solid #487673;
+    background: transparent;
+    border-width: 0px 0px 1px 0px;
+}
+.botao-traco-p {
+    font-family: Stolzl;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: #385A58;
+    border: 1px solid #385A58;
+    background: transparent;
+    border-width: 0px 0px 1px 0px;
+}
+.b-branco-cor {
+    color: #FFF;
+    border-color: #FFF;
+}
+.botao-quadrado {
+    font-weight: Stolzl;
+    font-size: 14px;
+    padding: 26px 220px;
+    background: #FFE7B9;
+    color: #385A58;
+    border-width: 0px;
+    font-weight: 600;
+}
+.b-cinza {
+    background: #C2C2C2;
+    color: #FFF;
+}
+.b-verdeescuro {
+    background: #385A58;
+    color: #FFF;
+}
+.b-verdeclaro{
+    background: #7EB6B2;
+    color: #FFF;
+}
+.botao-cumprido {
+    font-family: Stolzl;
+    padding: 13px 20px;
+    font-size: 14px;
+    background: #FFF;
+    color: #5C9B97;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
