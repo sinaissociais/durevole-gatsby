@@ -25,6 +25,9 @@ body {
 main {
     background-color: white;
 }
+svg {
+    fill: currentColor;
+}
 button {
     border-width: 0px;
     cursor: pointer;
@@ -174,8 +177,21 @@ p.destaque-pequeno {
     box-sizing: border-box;
     border-radius: 100px;
 }
+.b-branco svg {
+    fill: #bb2941;
+}
+.botao-atendimento {
+    background: transparent;
+    color: red;
+}
 
 
 /* 4 - Cabecalho */
-
+.logo {
+    fill: #5C9B97;
+}
+.cabecalho-branco {
+    color: white;
+}
+.cabecalho-verde {}
 
