@@ -1,9 +1,37 @@
+/* Site Durevole
+Autores: Reges Washington e Patricia Silva */
 
-body {
+@charset "UTF-8";
+
+/* Indice do CSS 
+
+1 - Estrutural
+2 - Tipografia
+3 - Botões
+4 - Cabeçalho
+ 
+*/
+
+
+/* 1 - Estrutural */
+
+* {
     font-family: Stolzl;
+}
+body {
     font-size: 12px;
     line-height: 25px;
 }
+main {
+    background-color: white;
+}
+button {
+    border-width: 0px;
+    cursor: pointer;
+}
+
+
+/* 2 - Tipografia */
 
 h1 {
     font-size: 55px;
@@ -45,6 +73,10 @@ p.destaque-pequeno {
     line-height: 25px;
     font-weight: 400;
 }
+
+
+/*  3 - Botões  */
+
 .botao-redondo {
     font-family: Stolzl;
     font-size: 12px;
@@ -53,9 +85,11 @@ p.destaque-pequeno {
     border-radius: 100px;
     color: #385A58;
     font-weight: 600;
-    border-width: 0px;
 }
-
+.botao-redondo:hover {
+    background-color: #274442;
+    color: #fff;
+}
 .b-branco {
     background: #FFF;
 }
@@ -64,8 +98,13 @@ p.destaque-pequeno {
     border: 2px solid #385A58;
     box-sizing: border-box;
 }
+.b-transparente:hover {
+    background: transparent;
+    border: 2px solid #274442;
+    color: #274442;
+    box-sizing: border-box;
+}
 .botao-traco-g {
-    font-family: Stolzl;
     font-size: 14px;
     padding: 18px 0px;
     color: #487673;
@@ -73,8 +112,12 @@ p.destaque-pequeno {
     background: transparent;
     border-width: 0px 0px 1px 0px;
 }
+.botao-traco-g:hover {
+    color: #274442;
+    border: 1px solid #274442;
+    border-width: 0px 0px 1px 0px;
+}
 .botao-traco-p {
-    font-family: Stolzl;
     font-size: 12px;
     font-weight: bold;
     padding: 10px 0px;
@@ -83,17 +126,31 @@ p.destaque-pequeno {
     background: transparent;
     border-width: 0px 0px 1px 0px;
 }
+.botao-traco-p:hover {
+    color: #274442;
+    border: 1px solid #274442;
+    border-width: 0px 0px 1px 0px;
+}
 .b-branco-cor {
     color: #FFF;
     border-color: #FFF;
 }
 .botao-quadrado {
-    font-weight: Stolzl;
     font-size: 14px;
     padding: 26px 220px;
     background: #FFE7B9;
     color: #385A58;
-    border-width: 0px;
+    font-weight: 600;
+}
+.botao-quadrado:hover {
+    background: #274442;
+    color: #fff;
+}
+.botao-quadrado {
+    font-size: 14px;
+    padding: 26px 220px;
+    background: #FFE7B9;
+    color: #385A58;
     font-weight: 600;
 }
 .b-cinza {
@@ -109,7 +166,6 @@ p.destaque-pequeno {
     color: #FFF;
 }
 .botao-cumprido {
-    font-family: Stolzl;
     padding: 13px 20px;
     font-size: 14px;
     background: #FFF;
@@ -118,3 +174,8 @@ p.destaque-pequeno {
     box-sizing: border-box;
     border-radius: 100px;
 }
+
+
+/* 4 - Cabecalho */
+
+
