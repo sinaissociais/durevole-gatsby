@@ -27,6 +27,8 @@ main {
 }
 svg {
     fill: currentColor;
+    display:block;  
+    border: none; overflow: hidden;
 }
 button {
     border-width: 0px;
@@ -182,16 +184,34 @@ p.destaque-pequeno {
 }
 .botao-atendimento {
     background: transparent;
-    color: red;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 
 /* 4 - Cabecalho */
+header {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li {
+    margin: 0 20px;
+}
 .logo {
-    fill: #5C9B97;
+    margin: 0;
+    padding: 0;
 }
 .cabecalho-branco {
     color: white;
 }
-.cabecalho-verde {}
+.cabecalho-verde {
+    color: #274442;
+}
 
