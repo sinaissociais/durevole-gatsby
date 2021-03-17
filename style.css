@@ -21,25 +21,38 @@ Autores: Reges Washington e Patricia Silva */
 body {
     font-size: 12px;
     line-height: 25px;
+    margin: 0;
+    color: #707070;
+}
+a {
+    text-decoration: none;
 }
 main {
     background-color: white;
-}
-svg {
-    fill: currentColor;
-    display:block;  
-    border: none; overflow: hidden;
 }
 button {
     border-width: 0px;
     cursor: pointer;
 }
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
 .container {
-    max-width: 1200px;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
 }
 
+/* 2 - Posicionamento */
+.flex {
+    display: flex;
+}
 
-/* 2 - Tipografia */
+/* 3 - Tipografia */
 
 h1 {
     font-size: 55px;
@@ -83,7 +96,7 @@ p.destaque-pequeno {
 }
 
 
-/*  3 - Botões  */
+/*  4 - Botões  */
 
 .botao-redondo {
     font-family: Stolzl;
@@ -182,9 +195,6 @@ p.destaque-pequeno {
     box-sizing: border-box;
     border-radius: 100px;
 }
-.b-branco svg {
-    fill: #bb2941;
-}
 .botao-atendimento {
     background: transparent;
     display: flex;
@@ -194,10 +204,12 @@ p.destaque-pequeno {
 }
 
 
-/* 4 - Cabecalho */
-header {
+/* 5 - Cabecalho */
+.header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 nav ul {
     display: flex;
@@ -217,4 +229,118 @@ nav ul li {
 .cabecalho-verde {
     color: #274442;
 }
+.cabecalho-verde a {
+    color: #274442;
+}
+.cabecalho-verde a:hover {
+    color: #3e6462;
+}
 
+
+/* 6 - Rodapé */
+footer a {
+    color: #707070;
+}
+footer ul li {
+    list-style: none;
+    font-weight: 300;
+}
+footer span {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+}
+.rodape {
+    background-color: #FAFAFA;
+}
+.rodape-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    padding: 5% 0;
+}
+.rodape-logo {
+    display: inherit;
+}
+.separador-light {
+    border-right: 1px solid #E7E7E7;
+}
+.rodape-pagamentos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5% 0;
+}
+.rodape-pagamentos-ali {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.certificacao {
+    background-color: #959595;
+    color: #FFF;
+}
+.selo-rodape {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-transform: uppercase;
+}
+.cnpj {
+    display: flex;
+    font-size: 10px;
+    text-align: center;
+    justify-content: space-around;
+}
+.logo-sonotto {
+    display: flex;
+    padding-left: 13px;
+}
+
+/* 7 - Elementos */
+.content-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.content-box {
+}
+.content-box-img-title {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    padding: 25px;
+    border-radius: 5px 5px 0px 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.content-box-img-title h5 {
+    margin: 0;
+    color: #FFE7B9;
+ }
+.content-box-img-title img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -10;
+}
+.content-box-desc {
+    background-color: #487673;
+    color: #B0D2D0;
+    padding: 35px 25px;
+    line-height: 20px;
+    font-size: 11px;
+    border-radius: 0px 0px 5px 5px;
+}
+.content-box-desc p {
+    margin: 0;
+    margin-bottom: 20px;
+}
