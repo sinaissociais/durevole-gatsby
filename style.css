@@ -18,6 +18,9 @@ Autores: Reges Washington e Patricia Silva */
 * {
     font-family: Stolzl;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 12px;
     line-height: 25px;
@@ -27,6 +30,8 @@ body {
 }
 a {
     text-decoration: none;
+    transition: all .3s;
+    color: #707070;
 }
 main {
     background-color: white;
@@ -225,13 +230,20 @@ p.destaque-pequeno {
     color: #FFF;
 }
 .botao-cumprido {
-    padding: 13px 20px;
+    padding: 13px 35px;
     font-size: 14px;
     background: #FFF;
     color: #5C9B97;
     border: 1px solid #EBEBEB;
     box-sizing: border-box;
     border-radius: 100px;
+    display: inline-flex;
+    gap: 25px;
+    align-items: center;
+}
+.botao-cumprido:hover {
+    background-color: #5C9B97;
+    color: #fff;
 }
 .botao-atendimento {
     background: transparent;
@@ -255,6 +267,10 @@ p.destaque-pequeno {
     gap: 20px;
     font-weight: 200;
     font-size: 12px;
+}
+.botao-play-video:hover {
+    background-color: #fff;
+    color: #416A68;
 }
 
 
@@ -482,13 +498,18 @@ footer span {
         text-align: center;
         padding: 15% 0;
     }
+    .selo-rodape {
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* 7 - Elementos */
 /* 7.1 - Elementos - Content Boxes */
 .content-boxes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
 }
 .content-box {
@@ -524,15 +545,14 @@ footer span {
     font-size: 11px;
     border-radius: 0px 0px 5px 5px;
 }
+.content-box-desc:hover {
+    background-color: #365c59;
+}
 .content-box-desc p {
     margin: 0;
     margin-bottom: 20px;
 }
-@media screen and (max-width: 750px) {
-    .content-boxes {
-        grid-template-columns: auto;
-    }
-}
+
 /* 7 - Elementos - Lojas */
 .loja-box {
     justify-content: space-around;
@@ -573,23 +593,15 @@ p.cor-loja {
     }
 }
 /* 7 - Elementos - Tecnologia */
-.tec-box {
+.info-box {
     display: grid;
     margin: 50px;
-    box-shadow: 11px 29px 32px rgba(0, 0, 0, 0.12);
+    box-shadow: 11px 29px 32px rgb(0 0 0 / 12%);
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "info photo";
 }
-.tec-espacos {
-    grid-area: info;
+.info-espacos {
     padding: 50px 70px;
     align-self: center;
-}
-.tec-img {
-    
-}
-.photo {
-    grid-area: photo;
 }
 .photo > img {
   object-fit: cover;
@@ -599,11 +611,44 @@ p.cor-loja {
 h2.cor-tec {
     color: #487673;
 }
+@media screen and (max-width: 950px) {
+    .info-box {
+        margin: 0;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 700px) {
+    .info-box {
+        box-shadow: none;
+        grid-template-columns: 1fr;
+    }
+    .info-espacos {
+        padding: 30px 0;
+        align-self: center;
+    }
+}
+
+/* 7 - Elementos - Um verdadeiro tesouro */
+ul.lista-flex {
+    list-style: none;
+    display: flex;
+    justify-content: space-around
+}
+.tesouro-centro {
+    text-align: center;
+}
+.espaco-botao {
+    margin: 48px 0px;
+}
+p.fonte-descricao {
+    font-size: 10px;
+}
 
 /* 7.2 - Elementos - Produto Boxes */
 .produto-box {
     position: relative;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .produto-box img {
     object-fit: cover;
@@ -613,6 +658,9 @@ h2.cor-tec {
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     width: 100%;
+}
+.produto-box:hover {
+    transform: scale(1.02);
 }
 .produto-titulo {
     font-size: 20px;
@@ -678,4 +726,22 @@ h2.cor-tec {
     position: absolute;
     left: -100px;
     top: 120px;
+}
+@media screen and (max-width: 960px) {
+    .grid-multi {
+        display: flex;
+        grid-gap: 20px;
+        flex-direction: column;
+    }
+    .g-titulo {
+        width: 100%;
+    }
+    .g-pedacos {
+        display: none;
+    }
+    .grid-image {
+        height: 260px;
+        position: relative;
+        left: -10%;
+    }
 }
