@@ -110,7 +110,6 @@ const ProdutosTemplate = (props) => {
                                 <h2>Pronto para instalar</h2>
                                 <p>Selecionamos e renovamos as melhores peças, que ficam prontas para uma nova instalação.</p>
                             </div>
-                            <button class="botao-traco-g branco">Conheça as colheitas <img class="arrow" src={IconSeta} /></button>
                         </div>
                         <div class="content-boxes">
                             <div class="content-box">
