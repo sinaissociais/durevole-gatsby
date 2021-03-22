@@ -61,6 +61,11 @@ img {
     display: flex;
 }
 
+/* Margens */
+.margem-15p {
+    margin: 15%;
+}
+
 /* 3 - Tipografia */
 
 h1 {
@@ -119,6 +124,9 @@ p.destaque-pequeno {
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+.section-title-center p {
+    max-width: 750px;
 }
 .section-title-center .destaque-light {
     max-width: 500px;
@@ -263,6 +271,7 @@ p.destaque-pequeno {
     color: white;
     padding: 5px 5px 5px 15px;
     display: flex;
+    justify-content: inherit;
     align-items: center;
     gap: 20px;
     font-weight: 200;
@@ -559,6 +568,10 @@ footer span {
     line-height: 20px;
     font-size: 11px;
     border-radius: 0px 0px 5px 5px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .content-box-desc:hover {
     background-color: #365c59;
@@ -650,6 +663,7 @@ h2.cor-tec {
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 55px;
+    margin: 10% 0;
 }
 .grid-image {
     grid-column-start: 1;
@@ -706,4 +720,182 @@ h2.cor-tec {
         position: relative;
         left: -10%;
     }
+}
+/* 7.3 - Elementos - Grid - Colheitas */
+.grid-colheitas {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 1fr;
+    grid-gap: 55px;
+    align-self: center;
+    margin-top: 25px;
+}
+.grid-colheitas-image {
+    grid-column-start: 1;
+    height: 580px;
+    object-fit: cover;
+    box-shadow: 11px 29px 32px rgba(0, 0, 0, 0.12);
+}
+.g-colheitas-titulo {
+    grid-column-start: 2;
+    align-self: end;
+}
+.g-colheitas-titulo h1 {
+    color: #274442;
+}
+.g-colheitas-pedacos {
+    position: absolute;
+    right: 0;
+    margin-top: 25px;
+    width: 20%;
+    height: 500px;
+}
+.g-colheitas-pedacos img {
+    height: 100%;
+    object-fit: cover;
+    object-position: -120px;
+}
+
+/* 7.3 - Elementos - Images - Colheitas */
+.colheitas-pedacos {
+    margin: 10% 0;
+}
+.colheitas-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+}
+.colheitas-images-grid img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: grayscale(100%)
+}
+
+/* 7.3 - Elementos - Quem Somos */
+.quem-destaque {
+    color: #fff;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.47) 100%), url(../images/quem-caixa-durevole.jpeg);
+    background-position: center center;
+    border-radius: 5px;
+    padding: 7% 15%;
+    text-align: center;
+    margin-top: 25px;
+}
+.quem-logo-meio-pagina {
+    width: 100%;
+    padding: 5% 0 10% 0;
+    display: flex;
+    justify-content: center;
+}
+.quem-logo-meio-pagina img {
+    max-width: 300px;
+}
+.quem-fsc {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    text-align: right;
+    gap: 50px;
+    padding: 5% 0;
+}
+/* 7.3 - Page - Onde Comprar */
+.onde-destaque {
+    color: #fff;
+    background: #5C9B97;
+    border-radius: 5px;
+    padding: 7% 15%;
+    text-align: center;
+    margin-top: 25px;
+}
+/* 7.3 - Page - Home */
+.hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/hero-imagem.jpeg');
+    background-position: center center;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: .5fr .5fr 2fr;
+    grid-template-areas:
+        "sidebar space segunda";
+    grid-gap: 3rem;
+    margin-bottom: 25px;
+    height: 80vh;
+    color: #fff;
+    align-content: flex-end;
+    padding-bottom: 5%;
+}
+.home-lojas {
+    grid-area: sidebar;
+    font-size: 10px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.home-destaques {
+    grid-area: segunda;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+.home-destaques svg {
+    fill: #fff;
+}
+.home-destaques span {
+    color: #FFE7B9;
+}
+.home-destaques .botao-traco-g {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+/* 7.2 - Elementos - Produto Boxes */
+.produto-box {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.produto-box img {
+    object-fit: cover;
+    height: 260px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    width: 100%;
+}
+.produto-box:hover {
+    transform: scale(1.02);
+}
+.produto-titulo {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.produto-descricao {
+    font-weight: 300;
+}
+.produto-tag {
+    background-color: #E9E9E9;
+    padding: 2px 15px;
+    position: absolute;
+    border-radius: 100px;
+    top: 7px;
+    right: 7px;
+    font-size: 10px;
+}
+@media screen and (max-width: 800px) {
+    ul.lista-flex {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+ /* Processos e Lojas */
+.background-verde-escuro {
+    background-color: #274442;
+    color: #fff;
+    padding: 5% 0;
 }

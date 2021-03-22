@@ -86,6 +86,9 @@ ul.lista-flex {
     display: flex;
     justify-content: space-around
 }
+.lista-flex .false {
+    display: none;
+}
 .tesouro-centro {
     text-align: center;
 }
@@ -96,57 +99,7 @@ p.fonte-descricao {
     font-size: 10px;
 }
 
-/* 7.2 - Elementos - Produto Boxes */
-.produto-box {
-    position: relative;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.produto-box img {
-    object-fit: cover;
-    height: 260px;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    width: 100%;
-}
-.produto-box:hover {
-    transform: scale(1.02);
-}
-.produto-titulo {
-    font-size: 20px;
-    margin: 0;
-    font-weight: 300;
-    line-height: 30px;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-.produto-descricao {
-    font-weight: 300;
-}
-.produto-tag {
-    background-color: #E9E9E9;
-    padding: 2px 15px;
-    position: absolute;
-    border-radius: 100px;
-    top: 7px;
-    right: 7px;
-    font-size: 10px;
-}
-@media screen and (max-width: 800px) {
-    ul.lista-flex {
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
 /* Processo e Lojas */
-.background-verde-escuro {
-    background-color: #274442;
-    color: #fff;
-    padding: 10% 0;
-}
 .botao-traco-g.branco {
     color: #fff;
 }

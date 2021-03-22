@@ -17,15 +17,15 @@ const Header = ({ siteTitle }) => (
     <header class="cabecalho-verde">
        <div class="container header">
            {/* Logo */}
-           <Link to="#" class="logo flex"><img src={logo} alt="Logo da Durevole" /></Link>
+           <Link to="/" class="logo flex"><img src={logo} alt="Logo da Durevole" /></Link>
            {/* Começo do Menu */}
            <nav class="main-menu">
                <ul class="menu-navegacao">
-                   <li><Link to="elementos">Coleções</Link></li>
-                   <li><Link to="#">Quem Somos</Link></li>
-                   <li><Link to="#">Colheitas</Link></li>
-                   <li><Link to="#">Certificações</Link></li>
-                   <button class="botao-redondo"><Link to="#">Comprar</Link></button>
+                   <li><Link to="/colecoes/">Coleções</Link></li>
+                   <li><Link to="/colheitas/">Colheitas</Link></li>
+                   <li><Link to="/profissionais/">Para Profissionais</Link></li>
+                   <li><Link to="/quem-somos/">Quem Somos</Link></li>
+                   <button class="botao-redondo"><Link to="/onde-comprar/">Onde Comprar</Link></button>
                </ul>
            </nav>
            {/* Menu de Navegação Mobile */}
