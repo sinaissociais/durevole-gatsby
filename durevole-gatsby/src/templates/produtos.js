@@ -69,7 +69,7 @@ const ProdutosTemplate = (props) => {
                     </div>
                 </div>
                 <div class="produto-botoes">
-                    <button class="botao-quadrado b-verdeescuro">Comprar</button>
+                <a href={`https://wa.me/5511989050102?text=Gostaria%20de%20solicitar%20orçamento%20para%20${props.data.contentfulProdutos.produtoTipoDeProduto.tituloTipoDeProduto}%20Durevole%20cod.%20${props.data.contentfulProdutos.codigoDoProdutoPrograma}%20-%20Coleção%20${props.data.contentfulProdutos.nomeDoProduto}`} target="_blank"><button class="botao-quadrado b-verdeescuro">Solicitar Orçamento</button></a>
                 </div>
             </div>
             {/* Fim - Topo Produto */}
@@ -94,7 +94,7 @@ const ProdutosTemplate = (props) => {
                         <li class={`${props.data.contentfulProdutos.produtoCertificadoFsc}`} ><img src={Icon5} alt="Ícone FSC" /> <p> FSC Certificada <br /> 100% Reciclada</p></li>
                     </ul>
                     <p class="fonte-descricao">{props.data.contentfulProdutos.produtoDestaquesAviso}</p>
-                    <button class="botao-cumprido espaco-botao">Solicitar Orçamento do Material Instalado</button>
+                    <a href={`https://wa.me/5511989050102?text=Gostaria%20de%20solicitar%20orçamento%20para%20${props.data.contentfulProdutos.produtoTipoDeProduto.tituloTipoDeProduto}%20Durevole%20cod.%20${props.data.contentfulProdutos.codigoDoProdutoPrograma}%20-%20Coleção%20${props.data.contentfulProdutos.nomeDoProduto}`} target="_blank"><button class="botao-cumprido espaco-botao">Solicitar Orçamento do Material Instalado</button></a>
                 </div>
             </div>
             {/* Fim - Destaques */}  

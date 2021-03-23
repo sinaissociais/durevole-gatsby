@@ -14,7 +14,7 @@ const Reparos = () => (
     <SEO title="Para Reparos" />
     <div class="container">
         <div class="section-title-center">
-            <h1>Para seus reparos</h1>
+            <h1>Maior agilidade nos seus reparos</h1>
             <h6>Procurando a peça ideal para reformar seu piso?</h6> <p>Os Tacos de Madeira Recuperada Durevole garantem maior agilidade na hora de fazer seus reparos. Nós selecionamos as melhores peças de madeira nobre, removemos toda a sujeira, pregos e cola que atrapalhavam na hora de sua instalação.</p>
             <p>Não encontrou o tamanho que precisava? Nós fazemos o tamanho personalizado pra você.</p>
             <div class="reparo-botoes">

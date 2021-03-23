@@ -10,9 +10,14 @@ import PagAmerican from '../images/pag-american.svg'
 import PagBoleto from '../images/pag-boleto.svg'
 import PagMercPago from '../images/pag-mercado-pago.svg'
 import SeloFSC from '../images/fsc-selo-branco.svg'
+import IcoWhatsapp from '../images/social-whatsapp.svg'
 
 const Footer = () => (
     <footer>
+        <div class="chat">
+            <div class="chat-text">Fale pelo Whatsapp</div>
+            <a href="https://wa.me/5511989050102" target="_blank"><img src={IcoWhatsapp} class="chat-icon" /></a>
+        </div>
         <div class="rodape">
             <div class="container">
                 <div class="rodape-grid">

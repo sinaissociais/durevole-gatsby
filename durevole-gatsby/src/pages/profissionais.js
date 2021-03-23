@@ -14,10 +14,14 @@ import Taco721 from "../images/profissional-taco-reparo7x21.jpeg"
 import ImgPro01 from "../images/pro-img-01.jpeg"
 import ImgPro02 from "../images/pro-img-02.jpeg"
 import ImgPro03 from "../images/pro-img-03.jpeg"
+import DurevoleParaPro from "../images/durevole-para-pro.svg"
 
 const Reparos = () => (
   <Layout>
     <SEO title="Para Reparos" />
+    <div class="profissionais-logo">
+        <img src={DurevoleParaPro} />
+    </div>
     <div class="container">
         <div class="section-title-center">
             <h1>Ganhe tempo na obra</h1>

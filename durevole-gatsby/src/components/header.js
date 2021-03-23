@@ -33,10 +33,10 @@ const Header = ({ siteTitle }) => (
            <div class="menu-navegacao-mobile-btn" onClick={() => {mudaClass()}}>
              <div class="menu-navegacao-mobile-btn_burger"></div>
            </div>
-           <button class="botao-atendimento">
-               <img src={iconchat} alt="Icone de Chat" />
-               Online
-           </button>
+           <a href="https://wa.me/5511989050102" target="_blank" class="botao-atendimento">
+                <img src={iconchat} alt="Icone de Chat" />
+                Online
+           </a>
        </div>
     </header>
   // Fim do Header
