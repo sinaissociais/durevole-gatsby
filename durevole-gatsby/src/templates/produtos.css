@@ -98,4 +98,57 @@ ul.lista-flex {
 p.fonte-descricao {
     font-size: 10px;
 }
-
+/* Processo e Lojas */
+.botao-traco-g.branco {
+    color: #fff;
+}
+.produto-processo-titulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+    .produto-topo {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "descricao"
+            "sidebar"
+            "imagem"
+            "detalhes"
+            "botoes";
+        grid-gap: 35px;
+    }
+    .produto-imagem {
+        width: 100%;
+    }
+    .produto-sidebar {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25px;
+        align-items: baseline;
+    }
+    .produto-sidebar li {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 380px) {
+    .produto-sidebar {
+        flex-direction: column;
+    }
+    .produto-sidebar li {
+        width: 100%;
+        flex-direction: row;
+        gap: 25px;
+        margin-bottom: 5px;
+    }
+    .produto-detalhes {
+        flex-direction: column;
+    }
+    .produto-detalhes-item {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .produto-detalhes-item:last-child {
+        margin-bottom: 0;
+    }
+} 

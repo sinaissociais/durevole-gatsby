@@ -9,7 +9,7 @@ import Processo3 from '../../images/content/3-limpeza.png'
 import Processo4 from '../../images/content/4-nacaixa.png'
 
 const ColheitaProcessos = () => (
-    <div class="produto-processo">
+    <div id="colheita-processo" class="produto-processo">
         <div class="content-boxes">
             <div class="content-box">
                 <div class="content-box-img-title">

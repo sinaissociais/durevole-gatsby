@@ -20,18 +20,21 @@ const Colecoes = () => (
         <div class="colecoes-menu-tipos">
             <Link to="#pisos">
                 <div class="colecoes-menu-tipos-item">
+                    <div class="colecoes-point"></div>
                     <h5>Pisos de Madeira</h5>
                     <span>Ver coleções</span>
                 </div>
             </Link>
             <Link to="#revestimentos">
                 <div class="colecoes-menu-tipos-item">
+                    <div class="colecoes-point"></div>
                     <h5>Revestimentos</h5>
                     <span>Ver coleções</span>
                 </div>
             </Link>
             <Link to="#decks">
                 <div class="colecoes-menu-tipos-item">
+                    <div class="colecoes-point"></div>
                     <h5>Decks</h5>
                     <span>Ver coleções</span>
                 </div>

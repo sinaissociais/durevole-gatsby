@@ -21,12 +21,12 @@ const Header = ({ siteTitle }) => (
            {/* Começo do Menu */}
            <nav class="main-menu">
                <ul class="menu-navegacao">
-                   <li><Link to="/colecoes/">Coleções</Link></li>
-                   <li><Link to="/oficina/">Oficina</Link></li>
-                   <li><Link to="/reparos/">Para Reparos</Link></li>
-                   <li><Link to="/colheitas/">Colheitas</Link></li>
-                   <li><Link to="/quem-somos/">Quem Somos</Link></li>
-                   <button class="botao-redondo"><Link to="/onde-comprar/">Onde Comprar</Link></button>
+                   <li><Link to="/colecoes/" activeClassName="ativa">Coleções</Link></li>
+                   <li><Link to="/oficina/" activeClassName="ativa">Oficina</Link></li>
+                   <li><Link to="/reparos/" activeClassName="ativa">Para Reparos</Link></li>
+                   <li><Link to="/colheitas/" activeClassName="ativa">Colheitas</Link></li>
+                   <li><Link to="/quem-somos/" activeClassName="ativa">Quem Somos</Link></li>
+                   <Link to="/onde-comprar/"><button class="botao-redondo">Onde Comprar</button></Link>
                </ul>
            </nav>
            {/* Menu de Navegação Mobile */}

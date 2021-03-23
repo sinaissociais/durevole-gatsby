@@ -19,8 +19,9 @@ const QuemSomos = () => (
         <section class="quem-destaque">
             <h1>Somos uma startup de Brasília que trabalha com madeira reutilizada</h1>
             <p>A Durevole nasceu buscando inovação e contando com a tecnologia como uma grande aliada na redução do desperdício da madeira.</p>
+            <Link to="#mais"><button class="botao-redondo">Saiba mais</button></Link>
         </section>
-        <section class="section-title-center">
+        <section id="mais" class="section-title-center">
             <h4>Sabia que a madeira é um dos poucos materiais 100% recicláveis na construção?</h4>
             <p>E após anos presenciando muitas reformas, nós percebemos que esse material nobre estava indo diretamente para caçambas de lixo.
             Dessa percepção e com a vontade de mudar esse cenário, nasce a Durevole.</p>

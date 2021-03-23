@@ -119,6 +119,32 @@ p.destaque-pequeno {
     font-weight: 400;
     margin: 0;
 }
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 45px;
+        line-height: 56px;
+        font-weight: 300;
+        margin: 15px 0;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 300;
+        margin: 15px 0;
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 32px;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+}
 
 /*  3.1 - Tipografia - Titulos  */
 .section-title-center {
@@ -202,6 +228,9 @@ p.destaque-pequeno {
     color: #274442;
     border: 1px solid rgb(226, 226, 226);
     border-width: 0px 0px 1px 0px;
+}
+.botao-traco-p.b-branco-cor:hover {
+    color: #FFE7B9;
 }
 .b-cinza-cor {
     color: #717171;
@@ -325,6 +354,19 @@ nav ul li {
 .menu-navegacao li:hover::after {
     opacity: 1;
     transform: scale(0.5);
+}
+.ativa {
+    font-weight: 400;
+}
+.ativa::after {
+    content: " ";
+    background-color: #5C9B97;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    transition: all .3s ease-in-out;
 }
 .logo {
     margin: 0;
@@ -761,6 +803,22 @@ h2.cor-tec {
     object-fit: cover;
     object-position: -120px;
 }
+@media screen and (max-width: 750px) {
+    .grid-colheitas {
+        flex-direction: column;
+        display: flex;
+        grid-gap: 25px;
+    }
+    .grid-colheitas-image {
+        height: 280px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        box-shadow: 11px 29px 32px rgb(0 0 0 / 12%);
+    }
+    .g-colheitas-pedacos {
+        display: none;
+    }
+}
 
 /* 7.3 - Elementos - Images - Colheitas */
 .colheitas-pedacos {
@@ -778,6 +836,11 @@ h2.cor-tec {
     border-radius: 5px;
     filter: grayscale(100%)
 }
+@media screen and (max-width: 750px) {
+    .colheitas-images-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* 7.3 - Elementos - Quem Somos */
 .quem-destaque {
@@ -791,7 +854,7 @@ h2.cor-tec {
 }
 .quem-logo-meio-pagina {
     width: 100%;
-    padding: 5% 0 10% 0;
+    padding: 2% 0 1% 0;
     display: flex;
     justify-content: center;
 }
@@ -805,6 +868,21 @@ h2.cor-tec {
     text-align: right;
     gap: 50px;
     padding: 5% 0;
+}
+@media screen and (max-width: 750px) {
+    .quem-fsc {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        align-items: center;
+    }
+    .quem-fsc img {
+        width: 50%;
+    }
+    .quem-destaque {
+        padding: 7% 5%;
+    }
 }
 /* 7.3 - Page - Onde Comprar */
 .onde-destaque {
@@ -860,6 +938,22 @@ h2.cor-tec {
     color: #fff;
     border-bottom: 1px solid #fff;
 }
+@media screen and (max-width: 750px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .home-lojas {
+        display: none;
+    }
+    .g-texto-1 {
+        display: none;
+    }
+    .g-texto-2 {
+        display: none;
+    }
+}
+
 /* 7.2 - Elementos - Produto Boxes */
 .produto-box {
     position: relative;
@@ -935,6 +1029,25 @@ h2.cor-tec {
 .produto-lojas img {
     margin-bottom: 20px;
 }
+.lojas-design.reparos {
+    display: none;
+}
+.lojas-reparos.piso {
+    display: none;
+}
+.lojas-reparos.deck {
+    display: none;
+}
+.lojas-reparos.revestimento {
+    display: none;
+}
+.lojas-reparos.reparos {
+    display: block;
+}
+.reparo-botoes {
+    display: flex;
+    gap: 35px;
+}
 @media screen and (max-width: 800px) {
     .produto-lojas {
         grid-template-columns: 1fr;
@@ -944,48 +1057,9 @@ h2.cor-tec {
     .produto-lojas img {
         max-width: 70%;
     }
-    .produto-topo {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "descricao"
-            "sidebar"
-            "imagem"
-            "detalhes"
-            "botoes";
-        grid-gap: 35px;
-    }
-    .produto-imagem {
-        width: 100%;
-    }
-    .produto-sidebar {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 25px;
-        align-items: baseline;
-    }
-    .produto-sidebar li {
+    .reparo-botoes {
         flex-direction: column;
-    }
-}
-@media screen and (max-width: 380px) {
-    .produto-sidebar {
-        flex-direction: column;
-    }
-    .produto-sidebar li {
-        width: 100%;
-        flex-direction: row;
-        gap: 25px;
-        margin-bottom: 5px;
-    }
-    .produto-detalhes {
-        flex-direction: column;
-    }
-    .produto-detalhes-item {
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    .produto-detalhes-item:last-child {
-        margin-bottom: 0;
+        align-items: center;
     }
 }
 /* Colecoes */
@@ -1001,11 +1075,31 @@ h2.cor-tec {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 200px;
+    min-height: 120px;
     cursor: pointer;
+    position: relative;
 }
-.colecoes-menu-tipos-item {
+.colecoes-point {
+    width: 8px;
+    height: 8px;
+    background-color: #5C9B97;
+    border-radius: 100px;
+    top: 25px;
+    position: absolute;
+}
+.colecoes-menu-tipos-item:hover {
+    transform: scale(1.02);
+    background-color: #5C9B97;
+    color: #fff;
+}
+.colecoes-menu-tipos-item span {
     font-size: 10px;
+}
+@media screen and (max-width: 750px) {
+    .colecoes-menu-tipos {
+        grid-template-columns: 1fr;
+        margin-bottom: 20%;
+    }
 }
 /* Profissionais */
 .profissionais-grid {
@@ -1013,4 +1107,33 @@ h2.cor-tec {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     align-items: center;
+}
+.profissionais-amigo {
+    background-color: #eef2f6;
+    padding: 10% 0;
+    position: relative;
+}
+.profissionais-amigo-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.profissionais-amigo-grid ul {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+.profissionais-amigo-grid li {
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+    font-size: 15px;
+}
+.reparo-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+}
+.reparo-images-grid img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }

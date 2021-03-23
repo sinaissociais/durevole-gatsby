@@ -3,8 +3,11 @@ import{ graphql } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from '../components/layout'
+import SEO from "../components/seo"
+
 import ColheitaProcessos from '../components/elementos/colheita-processos'
 import LojasMin from '../components/elementos/lojas-min'
+import LojasReparos from '../components/elementos/lojas-reparos'
 
 import "./produtos.css"
 
@@ -19,6 +22,7 @@ import IconSeta from '../images/icon-seta-verde.svg'
 const ProdutosTemplate = (props) => {
     return (
         <Layout>
+            <SEO title={props.data.contentfulProdutos.nomeDoProduto} />
             {/* Início - Topo Produto */}
             <div class="container produto-topo">
                 <ul class="produto-sidebar">
@@ -90,7 +94,7 @@ const ProdutosTemplate = (props) => {
                         <li class={`${props.data.contentfulProdutos.produtoCertificadoFsc}`} ><img src={Icon5} alt="Ícone FSC" /> <p> FSC Certificada <br /> 100% Reciclada</p></li>
                     </ul>
                     <p class="fonte-descricao">{props.data.contentfulProdutos.produtoDestaquesAviso}</p>
-                    <button class="botao-cumprido espaco-botao">Solicitar Orçamento do Material Instalado <img src={IconSeta} /></button>
+                    <button class="botao-cumprido espaco-botao">Solicitar Orçamento do Material Instalado</button>
                 </div>
             </div>
             {/* Fim - Destaques */}  
@@ -105,7 +109,12 @@ const ProdutosTemplate = (props) => {
                         </div>
                     </div>
                     <ColheitaProcessos />
-                    <LojasMin />
+                    <div class={`lojas-design ${props.data.contentfulProdutos.produtoTipoDeProduto.slugTipoDeProduto}`}>
+                        <LojasMin />
+                    </div>
+                    <div class={`lojas-reparos ${props.data.contentfulProdutos.produtoTipoDeProduto.slugTipoDeProduto}`}>
+                        <LojasReparos />
+                    </div>
                 </div>
             </section>
             {/* Fim - Processo e Lojas */} 
@@ -132,6 +141,7 @@ export const query = graphql`
             produtoTipoDeProduto {
                 id
                 tituloTipoDeProduto
+                slugTipoDeProduto
             }
             produtoEspecieMadeira
             produtoEspessura

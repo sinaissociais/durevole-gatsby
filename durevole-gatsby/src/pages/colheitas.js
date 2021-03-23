@@ -35,7 +35,7 @@ const Colheitas = () => (
                 <p>A colheita é o primeiro passo para transformar a madeira nobre usada, antes gasta, em um produto Durevole.</p>
 
                 <p>Retiramos manualmente e selecionamos as peças com potencial, para garantir o máximo aproveitamento da madeira de reuso, resignificando o seu valor nobre e transformando em um novo produto: natural, belíssimo e durável.</p>
-                <button class="botao-traco-g">Conheça as colheitas <img class="arrow" src={IconSeta} /></button>
+                <Link to="#colheita-processo"><button class="botao-traco-g">Conheça as colheitas <img class="arrow" src={IconSeta} /></button></Link>
             </div>
             <div class="g-colheitas-pedacos">
                 <img src={ColMadeira} alt="Parte da história de Brasília" />
@@ -61,6 +61,7 @@ const Colheitas = () => (
         </section>
     </div>
     <ProdutosDestaque />
+    <div class="margem-5p"></div>
   </Layout>
 )
 

@@ -20,8 +20,8 @@ const IndexPage = () => (
         <div class="home-destaques">
           <h1>Madeira <span>recuperada</span>, <span>durável</span> e <span>certificada</span>. Pronta para instalar.</h1>
           <div class="hero-botoes">
-            <button class="botao-traco-g">Coleções <img src={IconSeta} class="arrow" /></button>
-            <button class="botao-traco-g">Peças sob medida <img src={IconSeta} class="arrow" /></button>
+            <Link to="/colecoes/"><button class="botao-traco-g">Coleções <img src={IconSeta} class="arrow" /></button></Link>
+            <Link to="/oficina/"><button class="botao-traco-g">Peças sob medida <img src={IconSeta} class="arrow" /></button></Link>
           </div>
         </div>
         <div class="home-lojas">

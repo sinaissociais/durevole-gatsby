@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import IconSeta from '../images/icon-seta-verde.svg'
+
 import ProdutosReparos from "../components/elementos/produtos-reparos"
 
 const Reparos = () => (
@@ -13,7 +15,13 @@ const Reparos = () => (
     <div class="container">
         <div class="section-title-center">
             <h1>Para seus reparos</h1>
-            <p>Extraímos tacos, assoalhos e tábuas em casas e apartamentos antigos, que possuem anos de instalação - geralmente são das décadas de 60 e 70 - e após um processo rigoroso de seleção, fazemos a recuperação dessas réguas de madeira.</p>
+            <h6>Procurando a peça ideal para reformar seu piso?</h6> <p>Os Tacos de Madeira Recuperada Durevole garantem maior agilidade na hora de fazer seus reparos. Nós selecionamos as melhores peças de madeira nobre, removemos toda a sujeira, pregos e cola que atrapalhavam na hora de sua instalação.</p>
+            <p>Não encontrou o tamanho que precisava? Nós fazemos o tamanho personalizado pra você.</p>
+            <div class="reparo-botoes">
+              <Link to="#reparos"><button class="botao-traco-g">Produtos<img src={IconSeta} class="arrow" /></button></Link>
+              <Link to="/oficina/"><button class="botao-traco-g">Peças sob medida<img src={IconSeta} class="arrow" /></button></Link>
+              <Link to="/profissionais/"><button class="botao-traco-g">Durevole para Profissionais<img src={IconSeta} class="arrow" /></button></Link>
+          </div>
         </div>
         <div class="margem-5p"></div>
         <ProdutosReparos />

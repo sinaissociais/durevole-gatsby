@@ -23,9 +23,9 @@ const Footer = () => (
                     <div>
                         <p class="destaque-pequeno">Para Casa</p>
                         <ul>
-                            <li><Link to="#">Pisos de Madeira</Link></li>
-                            <li><Link to="#">Revestimentos</Link></li>
-                            <li><Link to="#">Decks</Link></li>
+                            <li><Link to="/colecoes/#pisos">Pisos de Madeira</Link></li>
+                            <li><Link to="/colecoes/#revestimentos">Revestimentos</Link></li>
+                            <li><Link to="/colecoes/#decks">Decks</Link></li>
                         </ul>
                     </div>
                     <div>
@@ -33,16 +33,14 @@ const Footer = () => (
                         <ul>
                             <li><Link to="/profissionais/">Linha Profissional</Link></li>
                             <li><Link to="/reparos/">Para reparos</Link></li>
-                            <li><Link to="/guias/">Guias de Instalação</Link></li>
                             <li><Link to="/profissionais/#lojas">Lojas Parceiras</Link></li>
                         </ul>
                     </div>
                     <div>
                         <p class="destaque-pequeno">Missão Durevole</p>
                         <ul>
-                            <li><Link to="#">Colheitas</Link></li>
-                            <li><Link to="#">Impacto Socioambiental</Link></li>
-                            <li><Link to="#">#Reuse</Link></li>
+                            <li><Link to="/colheitas/">Colheitas</Link></li>
+                            <li><Link to="/reuse/">#Reuse</Link></li>
                         </ul>
                     </div>
                 </div>

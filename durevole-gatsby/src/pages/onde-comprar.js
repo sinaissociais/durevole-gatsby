@@ -12,9 +12,9 @@ import LaminaDurevole from '../images/lamina-durevole.jpeg'
 import Brasilia from '../images/brasilia.png'
 import InfoImgTecnologia from '../images/foto-tecnologia.jpeg'
 
-const QuemSomos = () => (
+const OndeComprar = () => (
   <Layout>
-    <SEO title="Quem Somos" />
+    <SEO title="Onde Comprar" />
     <div class="container">
         <section class="onde-destaque">
             <h1>Onde comprar madeira Durevole</h1>
@@ -34,13 +34,13 @@ const QuemSomos = () => (
                         <p>São Geraldo - Lago Sul <br />
                             QI 5 do Lago Sul <br />
                             (61) 99506-5542</p>
-                        <button class="botao-traco-p b-cinza-cor">Visite a loja</button>
+                            <a href="https://www.google.com/maps/dir//Setor+de+Habita%C3%A7%C3%B5es+Individuais+Sul+QI+5+S%C3%A3o+Geraldo+Lago+-+Lago+Sul,+Bras%C3%ADlia+-+DF/@-15.8515189,-47.9378205,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a25d25da904fd:0x2fb083c3d1313ba2!2m2!1d-47.9028009!2d-15.8515217" target="_blank"><button class="botao-traco-p b-cinza-cor">Visite a loja</button></a>
                     </div>
                     <div>
                         <p>São Geraldo - S.I.A <br />
                             S.I.A Trecho 03, Nº 790 <br />
                             (61) 99506-5542</p>
-                        <button class="botao-traco-p b-cinza-cor">Visite a loja</button>
+                            <a href="https://www.google.com/maps/dir//Sao+Geraldo+brasilia/@-15.8035257,-47.9936307,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a31a9a21b536b:0x740453c11c83f00e!2m2!1d-47.9586111!2d-15.8036111" target="_blank"><button class="botao-traco-p b-cinza-cor">Visite a loja</button></a>
                     </div>
                 </div>
             </div>
@@ -52,13 +52,13 @@ const QuemSomos = () => (
                         <p>Mosarte & Co. - Concept <br />
                             Alameda Gabriel Monteiro <br /> da Silva, 1556 -Jardins <br />
                             (11) 3081-2826</p>
-                        <button class="botao-traco-p b-cinza-cor">Visite a loja</button>
+                            <a href="https://www.google.com/maps/dir//Mosarte+%26+Co.+%7C+Concept+-+Alameda+Gabriel+Monteiro+da+Silva+-+Jardim+America,+S%C3%A3o+Paulo+-+SP/@-23.572623,-46.7172307,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce577219a7eb8b:0x2a83f949666a0782!2m2!1d-46.6822112!2d-23.5726269" target="_blank"><button class="botao-traco-p b-cinza-cor">Visite a loja</button></a>
                     </div>
                     <div>
                         <p>Mosarte & Co. - D&D <br />
                             Av. das Nações Unidas, <br /> 12555, Itaim Bibi <br />
                             (11) 4195-0031</p>
-                        <button class="botao-traco-p b-cinza-cor">Visite a loja</button>
+                            <a href="https://www.google.com/maps/dir//D%26D+Shopping+-+Avenida+das+Na%C3%A7%C3%B5es+Unidas+-+Cidade+Mon%C3%A7%C3%B5es,+S%C3%A3o+Paulo+-+SP/@-23.6089817,-46.7316431,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce50cce8d95555:0x83c7804d0b1512da!2m2!1d-46.6966236!2d-23.6089856" target="_blank"><button class="botao-traco-p b-cinza-cor">Visite a loja</button></a>
                     </div>
                 </div>
             </div>
@@ -68,4 +68,4 @@ const QuemSomos = () => (
   </Layout>
 )
 
-export default QuemSomos
+export default OndeComprar
