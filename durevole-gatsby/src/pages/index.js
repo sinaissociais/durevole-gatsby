@@ -18,8 +18,11 @@ const IndexPage = () => (
     <section class="hero">
       <div class="container hero-grid">
         <div class="home-destaques">
-          <h1>Madeira recuperada, <span>durável</span> e <span>certificada</span>. Pronta para instalar.</h1>
-          <button class="botao-traco-g">Conheça as colheitas <img src={IconSeta} class="arrow" /></button>
+          <h1>Madeira <span>recuperada</span>, <span>durável</span> e <span>certificada</span>. Pronta para instalar.</h1>
+          <div class="hero-botoes">
+            <button class="botao-traco-g">Coleções <img src={IconSeta} class="arrow" /></button>
+            <button class="botao-traco-g">Peças sob medida <img src={IconSeta} class="arrow" /></button>
+          </div>
         </div>
         <div class="home-lojas">
           <div>
@@ -52,8 +55,9 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <ProdutosDestaque />
     <GridDestaque />
+    <ProdutosDestaque />
+    <div class="margem-5p"></div>
     <section class="background-verde-escuro">
       <div class="container">
           <div class="section-title-center">

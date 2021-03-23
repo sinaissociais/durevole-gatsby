@@ -56,9 +56,6 @@ export default () => (
                         </Link>
                     ))}
                 </div>
-                <div class="section-title-center">
-                    <p>Extraímos tacos, assoalhos e tábuas em casas e apartamentos antigos, que possuem anos de instalação - geralmente são das décadas de 60 e 70 - e após um processo rigoroso de seleção, fazemos a recuperação dessas réguas de madeira.</p>
-                </div>
             </section>
         </div>
     )}

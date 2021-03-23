@@ -17,31 +17,32 @@ const Footer = () => (
             <div class="container">
                 <div class="rodape-grid">
                     <div class="rodape-logo">
-                        <Link to="#"><img src={logo} /></Link>
+                        <Link to="/"><img src={logo} /></Link>
                         © 2021 Durevole
                     </div>
                     <div>
                         <p class="destaque-pequeno">Para Casa</p>
                         <ul>
-                            <li><a href="#">Pisos de Madeira</a></li>
-                            <li><a href="#">Revestimentos</a></li>
-                            <li><a href="#">Decks</a></li>
+                            <li><Link to="#">Pisos de Madeira</Link></li>
+                            <li><Link to="#">Revestimentos</Link></li>
+                            <li><Link to="#">Decks</Link></li>
                         </ul>
                     </div>
                     <div>
                         <p class="destaque-pequeno">Para Profissionais</p>
                         <ul>
-                            <li><a href="#">Produtos</a></li>
-                            <li><a href="#">Guia de Instalação</a></li>
-                            <li><a href="#">Lojas Parceiras</a></li>
+                            <li><Link to="/profissionais/">Linha Profissional</Link></li>
+                            <li><Link to="/reparos/">Para reparos</Link></li>
+                            <li><Link to="/guias/">Guias de Instalação</Link></li>
+                            <li><Link to="/profissionais/#lojas">Lojas Parceiras</Link></li>
                         </ul>
                     </div>
                     <div>
                         <p class="destaque-pequeno">Missão Durevole</p>
                         <ul>
-                            <li><a href="#">Colheitas</a></li>
-                            <li><a href="#">Impacto Socioambiental</a></li>
-                            <li><a href="#">#Reuse</a></li>
+                            <li><Link to="#">Colheitas</Link></li>
+                            <li><Link to="#">Impacto Socioambiental</Link></li>
+                            <li><Link to="#">#Reuse</Link></li>
                         </ul>
                     </div>
                 </div>
