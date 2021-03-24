@@ -8,10 +8,6 @@ import SEO from "../components/seo"
 import LogoSaoGeraldo from '../images/logo-saogeraldo.svg'
 import LogoMosarte from '../images/logo-mosarte.svg'
 
-import LaminaDurevole from '../images/lamina-durevole.jpeg'
-import Brasilia from '../images/brasilia.png'
-import InfoImgTecnologia from '../images/foto-tecnologia.jpeg'
-
 const OndeComprar = () => (
   <Layout>
     <SEO title="Onde Comprar" />

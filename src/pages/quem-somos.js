@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Logo from '../images/logo-verde.svg'
 import SeloFSC from '../images/fsc-selo-cinza.svg'
 
-import LaminaDurevole from '../images/lamina-durevole.jpeg'
+import LaminaDurevole from '../images/lamina-durevole.jpg'
 import Brasilia from '../images/brasilia.png'
 import InfoImgTecnologia from '../images/foto-tecnologia.jpeg'
 
