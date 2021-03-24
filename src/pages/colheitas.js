@@ -16,12 +16,6 @@ import Col01 from '../images/col-img-01.jpeg'
 import Col02 from '../images/col-img-02.jpeg'
 import Col03 from '../images/col-img-03.png'
 
-import IconPlay from '../images/icon-play.svg'
-import Processo1 from '../images/content/1-colheita.png'
-import Processo2 from '../images/content/2-triagem.png'
-import Processo3 from '../images/content/3-limpeza.png'
-import Processo4 from '../images/content/4-nacaixa.png'
-
 const Colheitas = () => (
   <Layout>
     <SEO title="Colheitas" />
