@@ -7,8 +7,26 @@ Autores: Reges Washington e Patricia Silva */
 
 1 - Estrutural
 2 - Tipografia
-3 - Botões
-4 - Cabeçalho
+3 - Posicionamentos
+4 - Margens
+5 - Botões
+6 - Elementos
+    6.1 - Elementos - Cabeçalho
+    6.2 - Elementos - Rodapé
+    6.3 - Elementos - Content Boxes
+    6.4 - Elementos - Lojas
+    6.5 - Elementos - Tecnologia
+    6.6 - Elementos - Grid
+    6.7 - Elementos - Grid Colheitas
+    6.8 - Elementos - Imagens Colheitas
+    6.9 - Elementos - Quem Somos
+    6.10 - Elementos - Produto Boxes
+    6.11 - Elementos - Processos e Lojas
+7 - Páginas
+    7.1 - Páginas - Onde Comprar
+    7.2 - Páginas - Home
+    7.3 - Páginas - Colecoes
+    7.4 - Páginas - Profissionais
  
 */
 
@@ -56,20 +74,7 @@ img {
     max-width: 1140px;
 }
 
-/* 2 - Posicionamento */
-.flex {
-    display: flex;
-}
-
-/* Margens */
-.margem-15p {
-    margin: 15%;
-}
-.margem-5p {
-    margin: 5%;
-}
-
-/* 3 - Tipografia */
+/* 2 - Tipografia */
 
 h1 {
     font-size: 55px;
@@ -146,7 +151,7 @@ p.destaque-pequeno {
     }
 }
 
-/*  3.1 - Tipografia - Titulos  */
+/*  2.1 - Tipografia - Titulos  */
 .section-title-center {
     margin: 60px 0;
     display: flex;
@@ -161,9 +166,20 @@ p.destaque-pequeno {
     max-width: 500px;
 }
 
+/* 3 - Posicionamentos */
+.flex {
+    display: flex;
+}
 
+/* 4 - Margens */
+.margem-15p {
+    margin: 15%;
+}
+.margem-5p {
+    margin: 5%;
+}
 
-/*  4 - Botões  */
+/*  5 - Botões  */
 
 .botao-redondo {
     font-family: Stolzl;
@@ -317,7 +333,9 @@ p.destaque-pequeno {
 }
 
 
-/* 5 - Cabecalho */
+/* 6 - Elementos */
+
+/* 6.1 - Elementos - Cabecalho */
 .header {
     display: flex;
     justify-content: space-between;
@@ -471,8 +489,7 @@ nav ul li {
       }
 }
 
-
-/* 6 - Rodapé */
+/* 6.2- Elementos - Rodapé */
 .chat {
     position: fixed;
     bottom: 20px;
@@ -600,8 +617,7 @@ footer span {
     }
 }
 
-/* 7 - Elementos */
-/* 7.1 - Elementos - Content Boxes */
+/* 6.3 - Elementos - Content Boxes */
 .content-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -662,7 +678,7 @@ footer span {
     margin-bottom: 20px;
 }
 
-/* 7 - Elementos - Lojas */
+/* 6.4 - Elementos - Lojas */
 .loja-box {
     justify-content: space-around;
     padding: 5% 10%;
@@ -701,7 +717,7 @@ p.cor-loja {
         margin: 35px 0;
     }
 }
-/* 7 - Elementos - Tecnologia */
+/* 6.5 - Elementos - Tecnologia */
 .info-box {
     display: grid;
     margin: 50px;
@@ -736,9 +752,7 @@ h2.cor-tec {
         align-self: center;
     }
 }
-
-
-/* 7.3 - Elementos - Grid */
+/* 6.6 - Elementos - Grid */
 .grid-multi {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
@@ -802,7 +816,7 @@ h2.cor-tec {
         left: -10%;
     }
 }
-/* 7.3 - Elementos - Grid - Colheitas */
+/* 6.7 - Elementos - Grid Colheitas */
 .grid-colheitas {
     display: grid;
     grid-template-columns: 2fr 1.3fr 1fr;
@@ -851,8 +865,7 @@ h2.cor-tec {
         display: none;
     }
 }
-
-/* 7.3 - Elementos - Images - Colheitas */
+/* 6.8 - Elementos - Imagens Colheitas */
 .colheitas-pedacos {
     margin: 10% 0;
 }
@@ -873,8 +886,7 @@ h2.cor-tec {
         grid-template-columns: 1fr;
     }
 }
-
-/* 7.3 - Elementos - Quem Somos */
+/* 6.9 - Elementos - Quem Somos */
 .quem-destaque {
     color: #fff;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.47) 100%), url(../images/quem-caixa-durevole.jpg);
@@ -916,77 +928,7 @@ h2.cor-tec {
         padding: 7% 5%;
     }
 }
-/* 7.3 - Page - Onde Comprar */
-.onde-destaque {
-    color: #fff;
-    background: #5C9B97;
-    border-radius: 5px;
-    padding: 7% 15%;
-    text-align: center;
-    margin-top: 25px;
-}
-/* 7.3 - Page - Home */
-.hero {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/hero-imagem.jpeg');
-    background-position: center center;
-}
-.hero-grid {
-    display: grid;
-    grid-template-columns: .5fr .5fr 2fr;
-    grid-template-areas:
-        "sidebar space segunda";
-    grid-gap: 3rem;
-    margin-bottom: 25px;
-    height: 80vh;
-    color: #fff;
-    align-content: flex-end;
-    padding-bottom: 5%;
-}
-.hero-botoes {
-    display: flex;
-    gap: 35px;
-}
-.home-lojas {
-    grid-area: sidebar;
-    font-size: 10px;
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-.home-destaques {
-    grid-area: segunda;
-    display: flex;
-    flex-direction: column;
-    align-self: end;
-}
-.home-destaques svg {
-    fill: #fff;
-}
-.home-destaques span {
-    color: #FFE7B9;
-}
-.home-destaques .botao-traco-g {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-@media screen and (max-width: 750px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-    }
-    .home-lojas {
-        display: none;
-    }
-    .g-texto-1 {
-        display: none;
-    }
-    .g-texto-2 {
-        display: none;
-    }
-}
-
-/* 7.2 - Elementos - Produto Boxes */
+/* 6.10 - Elementos - Produto Boxes */
 .produto-box {
     position: relative;
     margin-bottom: 10px;
@@ -1037,7 +979,7 @@ h2.cor-tec {
         gap: 25px;
     }
 }
- /* Processos e Lojas */
+/* 6.11 - Elementos - Processos e Lojas */
 .background-verde-escuro {
     background-color: #274442;
     color: #fff;
@@ -1094,7 +1036,90 @@ h2.cor-tec {
         align-items: center;
     }
 }
-/* Colecoes */
+/* 7 - Páginas */
+/* 7.1 - Páginas - Onde Comprar */
+.onde-destaque {
+    color: #fff;
+    background: #5C9B97;
+    border-radius: 5px;
+    padding: 7% 15%;
+    text-align: center;
+    margin-top: 25px;
+}
+/* 7.2 - Páginas - Home */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+.hero-video-player {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.8;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: .5fr .5fr 2fr;
+    grid-template-areas:
+        "sidebar space segunda";
+    grid-gap: 3rem;
+    margin-bottom: 25px;
+    height: 80vh;
+    color: #fff;
+    align-content: flex-end;
+    padding-bottom: 5%;
+    position: relative;
+    z-index: 5;
+}
+.hero-botoes {
+    display: flex;
+    gap: 35px;
+}
+.home-lojas {
+    grid-area: sidebar;
+    font-size: 10px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.home-destaques {
+    grid-area: segunda;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+.home-destaques svg {
+    fill: #fff;
+}
+.home-destaques span {
+    color: #FFE7B9;
+}
+.home-destaques .botao-traco-g {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+@media screen and (max-width: 750px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .home-lojas {
+        display: none;
+    }
+    .g-texto-1 {
+        display: none;
+    }
+    .g-texto-2 {
+        display: none;
+    }
+}
+/* 7.3 - Páginas - Colecoes */
 .colecoes-menu-tipos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1133,7 +1158,7 @@ h2.cor-tec {
         margin-bottom: 20%;
     }
 }
-/* Profissionais */
+/* 7.4 - Páginas - Profissionais */
 .profissionais-logo {
     background: #274442;
     display: flex;

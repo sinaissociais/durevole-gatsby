@@ -12,10 +12,27 @@ import LojasMin from '../components/elementos/lojas-min'
 
 import IconSeta from '../images/icon-seta-branca.svg'
 
+import VideoDurevole from '../videos/durevole-intro.mp4'
+import VideoDurevolePo from '../videos/hero-imagem.jpeg'
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <section class="hero">
+    <SEO title="Madeira recuperada, durável e certificada" />
+    <section class="hero" >
+    <video
+                  className="hero-video-player"
+                  poster={VideoDurevolePo}
+                  height="100%"
+                  width="100%"
+                  loop
+                  muted
+                  autoPlay
+                >
+                  <source
+                    src={VideoDurevole}
+                    type="video/mp4"
+                  />
+      </video>
       <div class="container hero-grid">
         <div class="home-destaques">
           <h1>Madeira <span>recuperada</span>, <span>durável</span> e <span>certificada</span>. Pronta para instalar.</h1>
@@ -48,8 +65,8 @@ const IndexPage = () => (
             </p>
             <p>
               São Geraldo<br />
-              SIA Trecho 3<br />
-              (61) 3031-4200
+              QI 5 do Lago Sul<br />
+              (61) 99506-5542
             </p>
           </div>
         </div>
