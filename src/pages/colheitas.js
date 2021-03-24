@@ -10,7 +10,7 @@ import ColheitaProcessos from '../components/elementos/colheita-processos'
 
 import IconSeta from '../images/icon-seta-verde.svg'
 
-import ColImagem from '../images/colheitas-imagem.jpeg'
+import ColImagem from '../images/colheitas-imagem.jpg'
 import ColMadeira from '../images/colheitas-madeira-velha.jpeg'
 import Col01 from '../images/col-img-01.jpeg'
 import Col02 from '../images/col-img-02.jpeg'

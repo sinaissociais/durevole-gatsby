@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 import IconSeta from '../../images/icon-seta-verde.svg'
 
-import LaminaDurevole from '../../images/lamina-durevole.jpeg'
+import LaminaDurevole from '../../images/lamina-durevole.jpg'
 import Brasilia from '../../images/brasilia.png'
 
 const GridDestaque = () => (

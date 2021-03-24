@@ -877,7 +877,7 @@ h2.cor-tec {
 /* 7.3 - Elementos - Quem Somos */
 .quem-destaque {
     color: #fff;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.47) 100%), url(../images/quem-caixa-durevole.jpeg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.47) 100%), url(../images/quem-caixa-durevole.jpg);
     background-position: center center;
     border-radius: 5px;
     padding: 7% 15%;
