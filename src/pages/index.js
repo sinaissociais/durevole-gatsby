@@ -17,7 +17,7 @@ import VideoDurevolePo from '../videos/hero-imagem.jpeg'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Madeira recuperada, durável e certificada" />
+    <SEO title="Madeira recuperada, durável e certificada" description="Nós trazemos vida nova a madeiras nobres, antes descartadas. Após um processo rigoroso de seleção, fazemos a recuperação de madeiras para nova instalação." />
     <section class="hero" >
     <video
                   className="hero-video-player"
@@ -35,6 +35,7 @@ const IndexPage = () => (
       </video>
       <div class="container hero-grid">
         <div class="home-destaques">
+          <p class="destaque-pequeno">Pisos, Revestimentos e Decks</p>
           <h1>Madeira <span>recuperada</span>, <span>durável</span> e <span>certificada</span>. Pronta para instalar.</h1>
           <div class="hero-botoes">
             <Link to="/colecoes/"><button class="botao-traco-g">Coleções <img src={IconSeta} class="arrow" /></button></Link>

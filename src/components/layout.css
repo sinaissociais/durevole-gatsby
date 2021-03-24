@@ -298,15 +298,13 @@ p.destaque-pequeno {
 }
 .botao-atendimento {
     background: transparent;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
     gap: 16px;
-    color: #274442;
-    font-weight: 300;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
-.botao-atendimento:hover {
-    color: #707070;
+.botao-atendimento a:hover {
+    transform: scale(1.1);
 }
 .botao-play-video {
     background-color: #416A68;

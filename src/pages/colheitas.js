@@ -18,7 +18,7 @@ import Col03 from '../images/col-img-03.png'
 
 const Colheitas = () => (
   <Layout>
-    <SEO title="Colheitas" />
+    <SEO title="Colheitas" description="A colheita é o primeiro passo para transformar a madeira nobre usada, antes gasta, em um produto Durevole." />
     <div class="container">
         <section class="grid-colheitas">
             <img class="grid-colheitas-image" src={ColImagem} alt="Lâminas Durevole com textura Rústica" />

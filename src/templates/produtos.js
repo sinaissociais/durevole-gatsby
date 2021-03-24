@@ -22,7 +22,7 @@ import IconSeta from '../images/icon-seta-verde.svg'
 const ProdutosTemplate = (props) => {
     return (
         <Layout>
-            <SEO title={props.data.contentfulProdutos.nomeDoProduto} />
+            <SEO title={props.data.contentfulProdutos.nomeDoProduto} description={`Madeira nobre recuperada para ${props.data.contentfulProdutos.produtoTipoDeProduto.tituloTipoDeProduto} da espécie ${props.data.contentfulProdutos.produtoEspecieMadeira} com ${props.data.contentfulProdutos.produtoEspessura} de espessura. ${props.data.contentfulProdutos.descricaoDoProduto.descricaoDoProduto}`} />
             {/* Início - Topo Produto */}
             <div class="container produto-topo">
                 <ul class="produto-sidebar">

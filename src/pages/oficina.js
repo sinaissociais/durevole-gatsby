@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const Oficina = () => (
   <Layout>
-    <SEO title="Oficina Durevole" />
+    <SEO title="Oficina Durevole" description="Fabricamos peças sob medida para o seu projeto" />
     <div class="container">
         <div class="section-title-center">
             <h1>Peças sob medida para seu projeto</h1>

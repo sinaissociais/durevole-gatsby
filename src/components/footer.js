@@ -45,7 +45,6 @@ const Footer = () => (
                         <p class="destaque-pequeno">Missão Durevole</p>
                         <ul>
                             <li><Link to="/colheitas/">Colheitas</Link></li>
-                            <li><Link to="/reuse/">#Reuse</Link></li>
                         </ul>
                     </div>
                 </div>

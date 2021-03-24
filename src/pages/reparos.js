@@ -11,7 +11,7 @@ import ProdutosReparos from "../components/elementos/produtos-reparos"
 
 const Reparos = () => (
   <Layout>
-    <SEO title="Para Reparos" />
+    <SEO title="Para Reparos" description="Os Tacos de Madeira Recuperada Durevole garantem maior agilidade na hora de fazer seus reparos." />
     <div class="container">
         <div class="section-title-center">
             <h1>Maior agilidade nos seus reparos</h1>
