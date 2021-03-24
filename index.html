@@ -15,24 +15,28 @@
 <body>
     <!-- Começo do Header -->
     <header class="cabecalho-verde">
-       <div class="container header">
-           <!-- Logo -->
-           <a href="#" class="logo flex"><img src="images/logo-verde.svg" alt="Logo da Durevole" /></a>
-           <!-- Começo do Menu -->
-           <nav>
-               <ul>
-                   <li><a href="#">Coleções</a></li>
-                   <li><a href="#">Quem Somos</a></li>
-                   <li><a href="#">Colheitas</a></li>
-                   <li><a href="#">Certificações</a></li>
-                   <button class="botao-redondo">Comprar</button>
-               </ul>
-           </nav>
-           <button class="botao-atendimento">
-               <img src="images/icon-chat-verde.svg" alt="Icone de Chat" />
-               Online
-           </button>
-       </div>
+        <div class="container header">
+            <!-- Logo -->
+            <a href="#" class="logo flex"><img src="images/logo-verde.svg" alt="Logo da Durevole" /></a>
+            <!-- Começo do Menu -->
+            <nav class="main-menu">
+                <ul class="menu-navegacao">
+                    <li><a href="#">Coleções</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Colheitas</a></li>
+                    <li><a href="#">Certificações</a></li>
+                    <button class="botao-redondo">Comprar</button>
+                </ul>
+            </nav>
+            <!-- Menu de Navegação Mobile -->
+            <div class="menu-navegacao-mobile-btn">
+             <div class="menu-navegacao-mobile-btn_burger"></div>
+            </div>
+            <button class="botao-atendimento">
+                <img src="images/icon-chat-verde.svg" alt="Icone de Chat" />
+                Online
+            </button>
+        </div>
     </header>
     <!-- Fim do Header -->
     <!-- Início do Footer -->
@@ -79,9 +83,11 @@
                     <div class="separador-light"></div>
                     <div class="rodape-pagamentos-ali">
                         <span>Aceitamos as principais bandeiras</span>
-                        <img src="images/pag-master.svg" />
-                        <img src="images/pag-visa.svg" />
-                        <img src="images/pag-american.svg" />
+                        <div>
+                            <img src="images/pag-master.svg" />
+                            <img src="images/pag-visa.svg" />
+                            <img src="images/pag-american.svg" />
+                        </div>
                     </div>
                     <div class="separador-light"></div>
                     <div class="rodape-pagamentos-ali">
@@ -95,13 +101,6 @@
                 </div>
                 <div></div>
             </div>
-            <div class="container cnpj">
-                <div class="flex">
-                    <p>Uma marca</p>
-                    <img class="logo-sonotto" src="images/logo-sonotto.svg" alt="Logo Sonotto">
-                </div>
-                <p>Sonotto Materiais para Construção – CNPJ 10.719.499/0001-45 - A Quadra 01 Lote 24 Setor Industrial (Ceilândia) Brasília-DF</p>
-            </div>
         </div>
         <div class="certificacao">
             <div class="container">
@@ -113,5 +112,8 @@
         </div>
     </footer>
     <!-- Fim do Footer -->
+
+    <!-- Scripts do Footer -->
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
