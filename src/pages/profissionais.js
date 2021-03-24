@@ -16,9 +16,9 @@ import ImgPro02 from "../images/pro-img-02.jpeg"
 import ImgPro03 from "../images/pro-img-03.jpeg"
 import DurevoleParaPro from "../images/durevole-para-pro.svg"
 
-const Reparos = () => (
+const Profissionais = () => (
   <Layout>
-    <SEO title="Para Reparos" />
+    <SEO title="Para Profissionais" description="Pensando nos profissionais que trabalham com madeira, a Durevole desenvolveu uma linha exclusiva focada em performance e desempenho em obra." />
     <div class="profissionais-logo">
         <img src={DurevoleParaPro} />
     </div>
@@ -79,4 +79,4 @@ const Reparos = () => (
   </Layout>
 )
 
-export default Reparos
+export default Profissionais

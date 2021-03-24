@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import logo from '../images/logo-verde.svg'
 
 import iconchat from '../images/icon-chat-verde.svg'
+import iconinsta from '../images/icon-instagram-verde.svg'
 
 function mudaClass() {
   var menuBtn = document.querySelector('.menu-navegacao-mobile-btn');
@@ -33,10 +34,14 @@ const Header = ({ siteTitle }) => (
            <div class="menu-navegacao-mobile-btn" onClick={() => {mudaClass()}}>
              <div class="menu-navegacao-mobile-btn_burger"></div>
            </div>
-           <a href="https://wa.me/5511989050102" target="_blank" class="botao-atendimento">
-                <img src={iconchat} alt="Icone de Chat" />
-                Online
-           </a>
+           <div class="botao-atendimento">
+             <a href="https://wa.me/5511989050102" target="_blank">
+                  <img src={iconchat} alt="Icone de Chat" />
+             </a>
+             <a href="https://instagram.com/durevoleoficial" target="_blank">
+                  <img src={iconinsta} alt="Icone Instagram Durevole" />
+             </a>
+           </div>
        </div>
     </header>
   // Fim do Header

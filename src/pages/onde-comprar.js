@@ -10,7 +10,7 @@ import LogoMosarte from '../images/logo-mosarte.svg'
 
 const OndeComprar = () => (
   <Layout>
-    <SEO title="Onde Comprar" />
+    <SEO title="Onde Comprar" description="Estamos em lojas que são referências nacionais em design de alto padrão." />
     <div class="container">
         <section class="onde-destaque">
             <h1>Onde comprar madeira Durevole</h1>

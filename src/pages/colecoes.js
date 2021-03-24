@@ -11,7 +11,7 @@ import ProdutosDecks from "../components/elementos/produtos-decks"
 
 const Colecoes = () => (
   <Layout>
-    <SEO title="Coleções Exclusivas e Limitadas" />
+    <SEO title="Coleções Exclusivas e Limitadas" description="Conheça as Coleções de madeiras nobres recuperadas. Extraímos tacos, assoalhos e tábuas em casas e apartamentos antigos, que possuem anos de instalação - geralmente são das décadas de 60 e 70 - e após um processo rigoroso de seleção, fazemos a recuperação dessas réguas de madeira." />
     <div class="container">
         <div class="section-title-center">
             <h1>Coleções Exclusivas e Limitadas</h1>

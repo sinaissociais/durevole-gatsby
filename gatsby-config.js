@@ -5,8 +5,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Durevole - Madeiras Recuperadas e Selecionadas`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Nós trazemos vida nova a madeiras nobres, antes descartadas. Após um processo rigoroso de seleção, fazemos a recuperação de madeiras para nova instalação.`,
+    author: `Reges Magalhães & Patricia da Mata - Sinais Sociais`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

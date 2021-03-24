@@ -14,7 +14,7 @@ import InfoImgTecnologia from '../images/foto-tecnologia.jpeg'
 
 const QuemSomos = () => (
   <Layout>
-    <SEO title="Quem Somos" />
+    <SEO title="Quem Somos" description="A Durevole nasceu buscando inovação e contando com a tecnologia como uma grande aliada na redução do desperdício da madeira." />
     <div class="container">
         <section class="quem-destaque">
             <h1>Somos uma startup de Brasília que trabalha com madeira reutilizada</h1>
