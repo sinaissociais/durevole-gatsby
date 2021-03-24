@@ -3,10 +3,10 @@ import {Link } from "gatsby"
 import PropTypes from "prop-types"
 
 import IconPlay from '../../images/icon-play.svg'
-import Processo1 from '../../images/content/1-colheita.png'
-import Processo2 from '../../images/content/2-triagem.png'
-import Processo3 from '../../images/content/3-limpeza.png'
-import Processo4 from '../../images/content/4-nacaixa.png'
+import Processo1 from '../../images/content/1-colheita.jpg'
+import Processo2 from '../../images/content/2-triagem.jpg'
+import Processo3 from '../../images/content/3-limpeza.jpg'
+import Processo4 from '../../images/content/4-nacaixa.jpg'
 
 const ColheitaProcessos = () => (
     <div id="colheita-processo" class="produto-processo">
