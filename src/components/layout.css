@@ -1117,6 +1117,11 @@ h2.cor-tec {
         display: none;
     }
 }
+@media screen and (max-width: 400px) {
+    .hero-botoes {
+        flex-direction: column;
+    }
+}
 /* 7.3 - Páginas - Colecoes */
 .colecoes-menu-tipos {
     display: grid;

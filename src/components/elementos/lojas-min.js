@@ -8,7 +8,7 @@ import RevMosarte from '../../images/logo-mosarte-branco.svg'
 const LojasMin = () => (
     <div class="produto-lojas">
         <div>
-            <h4>Saiba onde comprar madeira recuperada e certificada FSC</h4>
+            <h4>Saiba onde comprar madeira recuperada e certificada FSC®</h4>
             <p>Você encontra nas lojas que são referência em design de alto padrão em todo o país.</p>
         </div>
         <div class="w-100">
