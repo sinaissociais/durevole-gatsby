@@ -7,26 +7,8 @@ Autores: Reges Washington e Patricia Silva */
 
 1 - Estrutural
 2 - Tipografia
-3 - Posicionamentos
-4 - Margens
-5 - Botões
-6 - Elementos
-    6.1 - Elementos - Cabeçalho
-    6.2 - Elementos - Rodapé
-    6.3 - Elementos - Content Boxes
-    6.4 - Elementos - Lojas
-    6.5 - Elementos - Tecnologia
-    6.6 - Elementos - Grid
-    6.7 - Elementos - Grid Colheitas
-    6.8 - Elementos - Imagens Colheitas
-    6.9 - Elementos - Quem Somos
-    6.10 - Elementos - Produto Boxes
-    6.11 - Elementos - Processos e Lojas
-7 - Páginas
-    7.1 - Páginas - Onde Comprar
-    7.2 - Páginas - Home
-    7.3 - Páginas - Colecoes
-    7.4 - Páginas - Profissionais
+3 - Botões
+4 - Cabeçalho
  
 */
 
@@ -74,7 +56,12 @@ img {
     max-width: 1140px;
 }
 
-/* 2 - Tipografia */
+/* 2 - Posicionamento */
+.flex {
+    display: flex;
+}
+
+/* 3 - Tipografia */
 
 h1 {
     font-size: 55px;
@@ -124,34 +111,8 @@ p.destaque-pequeno {
     font-weight: 400;
     margin: 0;
 }
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 45px;
-        line-height: 56px;
-        font-weight: 300;
-        margin: 15px 0;
-    }
-    h2 {
-        font-size: 40px;
-        line-height: 50px;
-        font-weight: 400;
-        margin: 15px 0;
-    }
-    h3 {
-        font-size: 30px;
-        line-height: 38px;
-        font-weight: 300;
-        margin: 15px 0;
-    }
-    h4 {
-        font-size: 25px;
-        line-height: 32px;
-        font-weight: 400;
-        margin: 15px 0;
-    }
-}
 
-/*  2.1 - Tipografia - Titulos  */
+/*  3.1 - Tipografia - Titulos  */
 .section-title-center {
     margin: 60px 0;
     display: flex;
@@ -159,27 +120,13 @@ p.destaque-pequeno {
     text-align: center;
     align-items: center;
 }
-.section-title-center p {
-    max-width: 750px;
-}
 .section-title-center .destaque-light {
     max-width: 500px;
 }
 
-/* 3 - Posicionamentos */
-.flex {
-    display: flex;
-}
 
-/* 4 - Margens */
-.margem-15p {
-    margin: 15%;
-}
-.margem-5p {
-    margin: 5%;
-}
 
-/*  5 - Botões  */
+/*  4 - Botões  */
 
 .botao-redondo {
     font-family: Stolzl;
@@ -217,7 +164,6 @@ p.destaque-pequeno {
     border-width: 0px 0px 1px 0px;
     font-weight: 300;
     display: flex;
-    gap: 25px;
     justify-content: space-between;
 }
 .botao-traco-g .arrow {
@@ -245,9 +191,6 @@ p.destaque-pequeno {
     border: 1px solid rgb(226, 226, 226);
     border-width: 0px 0px 1px 0px;
 }
-.botao-traco-p.b-branco-cor:hover {
-    color: #FFE7B9;
-}
 .b-cinza-cor {
     color: #717171;
     border-color: #717171;
@@ -257,9 +200,8 @@ p.destaque-pequeno {
     border-color: #FFF;
 }
 .botao-quadrado {
-    width: 100%;
     font-size: 14px;
-    padding: 26px 30px;
+    padding: 26px 220px;
     background: #FFE7B9;
     color: #385A58;
     font-weight: 600;
@@ -267,6 +209,13 @@ p.destaque-pequeno {
 .botao-quadrado:hover {
     background: #274442;
     color: #fff;
+}
+.botao-quadrado {
+    font-size: 14px;
+    padding: 26px 220px;
+    background: #FFE7B9;
+    color: #385A58;
+    font-weight: 600;
 }
 .b-cinza {
     background: #C2C2C2;
@@ -298,13 +247,15 @@ p.destaque-pequeno {
 }
 .botao-atendimento {
     background: transparent;
-    display: grid;
-    gap: 16px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: #274442;
+    font-weight: 300;
 }
-.botao-atendimento a:hover {
-    transform: scale(1.1);
+.botao-atendimento:hover {
+    color: #707070;
 }
 .botao-play-video {
     background-color: #416A68;
@@ -312,28 +263,18 @@ p.destaque-pequeno {
     color: white;
     padding: 5px 5px 5px 15px;
     display: flex;
-    justify-content: inherit;
     align-items: center;
     gap: 20px;
     font-weight: 200;
     font-size: 12px;
-    display: none;
 }
 .botao-play-video:hover {
     background-color: #fff;
     color: #416A68;
 }
-@media screen and (max-width: 800px) {
-    .botao-quadrado {
-        width: 100%;
-        padding: 26px 100px;
-    }
-}
 
 
-/* 6 - Elementos */
-
-/* 6.1 - Elementos - Cabecalho */
+/* 5 - Cabecalho */
 .header {
     display: flex;
     justify-content: space-between;
@@ -366,19 +307,6 @@ nav ul li {
     opacity: 1;
     transform: scale(0.5);
 }
-.ativa {
-    font-weight: 400;
-}
-.ativa::after {
-    content: " ";
-    background-color: #5C9B97;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-    transition: all .3s ease-in-out;
-}
 .logo {
     margin: 0;
     padding: 0;
@@ -394,9 +322,6 @@ nav ul li {
 }
 .cabecalho-verde a:hover {
     color: #3e6462;
-}
-.menu-navegacao-mobile-btn {
-    display: none;
 }
 @media screen and (max-width: 970px) {
     .botao-atendimento {
@@ -487,41 +412,8 @@ nav ul li {
       }
 }
 
-/* 6.2- Elementos - Rodapé */
-.chat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.chat-icon {
-    width: 50px;
-    border-radius: 100px;
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
-    animation: pulse 2s infinite;
-}
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-.chat-text {
-    font-size: 9px;
-    background: #4CAF50;
-    border-radius: 100px;
-    padding: 0 15px;
-    margin-bottom: 7px;
-    color: #fff;
-    font-weight: 400;
-}
+
+/* 6 - Rodapé */
 footer a {
     color: #707070;
 }
@@ -536,6 +428,7 @@ footer span {
 }
 .rodape {
     background-color: #FAFAFA;
+    margin-top: 55px;
 }
 .rodape-grid {
     display: grid;
@@ -610,12 +503,10 @@ footer span {
         justify-content: center;
         text-align: center;
     }
-    .chat-text {
-        display: none;
-    }
 }
 
-/* 6.3 - Elementos - Content Boxes */
+/* 7 - Elementos */
+/* 7.1 - Elementos - Content Boxes */
 .content-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -636,17 +527,7 @@ footer span {
 .content-box-img-title h5 {
     margin: 0;
     color: #FFE7B9;
-    z-index: 10;
  }
-.content-box-img-title::after {
-    content: " ";
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-}
 .content-box-img-title img {
     width: 100%;
     height: 100%;
@@ -654,7 +535,7 @@ footer span {
     position: absolute;
     top: 0%;
     left: 0%;
-    z-index: 0;
+    z-index: -10;
 }
 .content-box-desc {
     background-color: #487673;
@@ -663,10 +544,6 @@ footer span {
     line-height: 20px;
     font-size: 11px;
     border-radius: 0px 0px 5px 5px;
-    min-height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .content-box-desc:hover {
     background-color: #365c59;
@@ -676,7 +553,7 @@ footer span {
     margin-bottom: 20px;
 }
 
-/* 6.4 - Elementos - Lojas */
+/* 7 - Elementos - Lojas */
 .loja-box {
     justify-content: space-around;
     padding: 5% 10%;
@@ -715,7 +592,7 @@ p.cor-loja {
         margin: 35px 0;
     }
 }
-/* 6.5 - Elementos - Tecnologia */
+/* 7 - Elementos - Tecnologia */
 .info-box {
     display: grid;
     margin: 50px;
@@ -750,13 +627,67 @@ h2.cor-tec {
         align-self: center;
     }
 }
-/* 6.6 - Elementos - Grid */
+
+/* 7 - Elementos - Um verdadeiro tesouro */
+ul.lista-flex {
+    list-style: none;
+    display: flex;
+    justify-content: space-around
+}
+.tesouro-centro {
+    text-align: center;
+}
+.espaco-botao {
+    margin: 48px 0px;
+}
+p.fonte-descricao {
+    font-size: 10px;
+}
+
+/* 7.2 - Elementos - Produto Boxes */
+.produto-box {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.produto-box img {
+    object-fit: cover;
+    height: 260px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    width: 100%;
+}
+.produto-box:hover {
+    transform: scale(1.02);
+}
+.produto-titulo {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.produto-descricao {
+    font-weight: 300;
+}
+.produto-tag {
+    background-color: #E9E9E9;
+    padding: 2px 15px;
+    position: absolute;
+    border-radius: 100px;
+    top: 7px;
+    right: 7px;
+    font-size: 10px;
+}
+/* 7.3 - Elementos - Grid */
 .grid-multi {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 55px;
-    margin: 10% 0;
 }
 .grid-image {
     grid-column-start: 1;
@@ -813,392 +744,4 @@ h2.cor-tec {
         position: relative;
         left: -10%;
     }
-}
-/* 6.7 - Elementos - Grid Colheitas */
-.grid-colheitas {
-    display: grid;
-    grid-template-columns: 2fr 1.3fr 1fr;
-    grid-gap: 55px;
-    align-self: center;
-    margin-top: 25px;
-}
-.grid-colheitas-image {
-    grid-column-start: 1;
-    height: 580px;
-    object-fit: cover;
-    box-shadow: 11px 29px 32px rgba(0, 0, 0, 0.12);
-}
-.g-colheitas-titulo {
-    grid-column-start: 2;
-    align-self: end;
-}
-.g-colheitas-titulo h1 {
-    color: #274442;
-}
-.g-colheitas-pedacos {
-    position: absolute;
-    right: 0;
-    margin-top: 25px;
-    width: 20%;
-    height: 500px;
-}
-.g-colheitas-pedacos img {
-    height: 100%;
-    object-fit: cover;
-    object-position: -120px;
-}
-@media screen and (max-width: 750px) {
-    .grid-colheitas {
-        flex-direction: column;
-        display: flex;
-        grid-gap: 25px;
-    }
-    .grid-colheitas-image {
-        height: 280px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        box-shadow: 11px 29px 32px rgb(0 0 0 / 12%);
-    }
-    .g-colheitas-pedacos {
-        display: none;
-    }
-}
-/* 6.8 - Elementos - Imagens Colheitas */
-.colheitas-pedacos {
-    margin: 10% 0;
-}
-.colheitas-images-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 35px;
-}
-.colheitas-images-grid img {
-    height: 230px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    filter: grayscale(100%)
-}
-@media screen and (max-width: 750px) {
-    .colheitas-images-grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* 6.9 - Elementos - Quem Somos */
-.quem-destaque {
-    color: #fff;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.47) 100%), url(../images/quem-caixa-durevole.jpg);
-    background-position: center center;
-    border-radius: 5px;
-    padding: 7% 15%;
-    text-align: center;
-    margin-top: 25px;
-}
-.quem-logo-meio-pagina {
-    width: 100%;
-    padding: 2% 0 1% 0;
-    display: flex;
-    justify-content: center;
-}
-.quem-logo-meio-pagina img {
-    max-width: 300px;
-}
-.quem-fsc {
-    margin: 0 auto;
-    width: 50%;
-    display: flex;
-    text-align: right;
-    gap: 50px;
-    padding: 5% 0;
-}
-@media screen and (max-width: 750px) {
-    .quem-fsc {
-        width: 100%;
-        flex-direction: column;
-        gap: 25px;
-        text-align: center;
-        align-items: center;
-    }
-    .quem-fsc img {
-        width: 50%;
-    }
-    .quem-destaque {
-        padding: 7% 5%;
-    }
-}
-/* 6.10 - Elementos - Produto Boxes */
-.produto-box {
-    position: relative;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.produto-box img {
-    object-fit: cover;
-    height: 260px;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    width: 100%;
-}
-.produto-box:hover {
-    transform: scale(1.02);
-}
-.produto-titulo {
-    font-size: 20px;
-    margin: 0;
-    font-weight: 300;
-    line-height: 30px;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-.produto-descricao {
-    font-weight: 300;
-}
-.produto-tag {
-    background-color: #E9E9E9;
-    padding: 2px 15px;
-    position: absolute;
-    border-radius: 100px;
-    top: 7px;
-    right: 7px;
-    font-size: 10px;
-}
-.produto-categoria {
-    margin-bottom: 25px;
-}
-.separador-line-produto {
-    height: 1px;
-    background-color: #e2e2e2;
-}
-@media screen and (max-width: 800px) {
-    ul.lista-flex {
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-/* 6.11 - Elementos - Processos e Lojas */
-.background-verde-escuro {
-    background-color: #274442;
-    color: #fff;
-    padding: 5% 0;
-}
-.botao-traco-g.branco {
-    color: #fff;
-}
-.produto-processo-titulo {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-.produto-lojas {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 15%;
-    margin: 5% 0;
-}
-.produto-lojas img {
-    margin-bottom: 20px;
-}
-.lojas-design.reparos {
-    display: none;
-}
-.lojas-reparos.piso {
-    display: none;
-}
-.lojas-reparos.deck {
-    display: none;
-}
-.lojas-reparos.revestimento {
-    display: none;
-}
-.lojas-reparos.reparos {
-    display: block;
-}
-.reparo-botoes {
-    display: flex;
-    gap: 35px;
-}
-@media screen and (max-width: 800px) {
-    .produto-lojas {
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-        text-align: center;
-    }
-    .produto-lojas img {
-        max-width: 70%;
-    }
-    .reparo-botoes {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* 7 - Páginas */
-/* 7.1 - Páginas - Onde Comprar */
-.onde-destaque {
-    color: #fff;
-    background: #5C9B97;
-    border-radius: 5px;
-    padding: 7% 15%;
-    text-align: center;
-    margin-top: 25px;
-}
-/* 7.2 - Páginas - Home */
-.hero {
-    position: relative;
-    overflow: hidden;
-    background-color: #000;
-}
-.hero-video-player {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    opacity: 0.8;
-}
-.hero-grid {
-    display: grid;
-    grid-template-columns: .5fr .5fr 2fr;
-    grid-template-areas:
-        "sidebar space segunda";
-    grid-gap: 3rem;
-    margin-bottom: 25px;
-    height: 80vh;
-    color: #fff;
-    align-content: flex-end;
-    padding-bottom: 5%;
-    position: relative;
-    z-index: 5;
-}
-.hero-botoes {
-    display: flex;
-    gap: 35px;
-}
-.home-lojas {
-    grid-area: sidebar;
-    font-size: 10px;
-    line-height: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-.home-destaques {
-    grid-area: segunda;
-    display: flex;
-    flex-direction: column;
-    align-self: end;
-}
-.home-destaques svg {
-    fill: #fff;
-}
-.home-destaques span {
-    color: #FFE7B9;
-}
-.home-destaques .botao-traco-g {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-@media screen and (max-width: 750px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-    }
-    .home-lojas {
-        display: none;
-    }
-    .g-texto-1 {
-        display: none;
-    }
-    .g-texto-2 {
-        display: none;
-    }
-}
-@media screen and (max-width: 400px) {
-    .hero-botoes {
-        flex-direction: column;
-    }
-}
-/* 7.3 - Páginas - Colecoes */
-.colecoes-menu-tipos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-.colecoes-menu-tipos-item {
-    background: #f3f3f3;
-    border-radius: 5px;
-    padding: 15px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 120px;
-    cursor: pointer;
-    position: relative;
-}
-.colecoes-point {
-    width: 8px;
-    height: 8px;
-    background-color: #5C9B97;
-    border-radius: 100px;
-    top: 25px;
-    position: absolute;
-}
-.colecoes-menu-tipos-item:hover {
-    transform: scale(1.02);
-    background-color: #5C9B97;
-    color: #fff;
-}
-.colecoes-menu-tipos-item span {
-    font-size: 10px;
-}
-@media screen and (max-width: 750px) {
-    .colecoes-menu-tipos {
-        grid-template-columns: 1fr;
-        margin-bottom: 20%;
-    }
-}
-/* 7.4 - Páginas - Profissionais */
-.profissionais-logo {
-    background: #274442;
-    display: flex;
-    justify-content: center;
-}
-.profissionais-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    align-items: center;
-}
-.profissionais-amigo {
-    background-color: #eef2f6;
-    padding: 10% 0;
-    position: relative;
-}
-.profissionais-amigo-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-}
-.profissionais-amigo-grid ul {
-    list-style-type: none;
-    margin-bottom: 25px;
-}
-.profissionais-amigo-grid li {
-    border-top: 1px solid #ccc;
-    padding: 15px 0;
-    font-size: 15px;
-}
-.reparo-images-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 35px;
-}
-.reparo-images-grid img {
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px;
 }
