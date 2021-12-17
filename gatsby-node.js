@@ -32,7 +32,9 @@ exports.createPages = ({ actions, graphql }) => {
         allContentfulProdutos (
             sort: { fields: [createdAt], order:DESC }
             filter: {
-                node_locale: {eq: "pt-BR"}},)
+                node_locale: {eq: "pt-BR"}
+            },
+            )
         {
             edges {
                 node {
