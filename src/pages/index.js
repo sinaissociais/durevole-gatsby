@@ -81,7 +81,7 @@ const IndexPage = () => (
           <div class="section-title-center">
               <div>
                   <h3>Processo de Transformação</h3>
-                  <p>Selecionamos e renovamos as melhores peças, que ficam prontas para uma nova instalação.</p>
+                  <p>Selecionamos e renovamos as melhores peças, que ficam prontas para uma nova instalação. Durevole-T.</p>
               </div>
           </div>
           <ColheitaProcessos />
